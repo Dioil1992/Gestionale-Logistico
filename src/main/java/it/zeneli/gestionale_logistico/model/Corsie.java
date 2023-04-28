@@ -15,6 +15,10 @@ public class Corsie {
     @Column(nullable = false)
     private Integer numero;
 
+    @ManyToOne
+    @JoinColumn(name = "magazzino_id")
+    private Magazzino magazzino;
+
     @ManyToMany
     @JoinTable(name = "corsia_colonna_pari", joinColumns = @JoinColumn(name = "corsia_id"), inverseJoinColumns = @JoinColumn(name = "colonna_pari_id"))
     private List<ColonnePari> colonnePari = new ArrayList();

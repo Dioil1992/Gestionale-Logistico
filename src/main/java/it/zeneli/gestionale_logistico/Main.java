@@ -9,6 +9,8 @@ public class Main {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("DefaultPersistenceUnit");
         EntityManager entityManager = factory.createEntityManager();
 
+
+
         entityManager.getTransaction().begin();
         entityManager.getTransaction().commit();
 
