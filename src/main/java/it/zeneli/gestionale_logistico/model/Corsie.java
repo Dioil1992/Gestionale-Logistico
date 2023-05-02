@@ -27,6 +27,14 @@ public class Corsie {
     @JoinTable(name = "corsia_colonna_dispari", joinColumns = @JoinColumn(name = "corsia_id"), inverseJoinColumns = @JoinColumn(name = "colonna_dispari_id"))
     private List<ColonneDispari> colonneDispari = new ArrayList();
 
+    public Magazzino getMagazzino() {
+        return magazzino;
+    }
+
+    public void setMagazzino(Magazzino magazzino) {
+        this.magazzino = magazzino;
+    }
+
     public Long getId() {
         return id;
     }

@@ -1,6 +1,8 @@
 package it.zeneli.gestionale_logistico.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity(name = "magazzino")
@@ -11,6 +13,18 @@ public class Magazzino {
 
     @Column(nullable = false)
     private String nome;
+
+    @OneToMany
+    @JoinTable(name = "magazzino_corsie", joinColumns = @JoinColumn(name = "magazzino_id"), inverseJoinColumns = @JoinColumn(name = "corsia_id"))
+    private List<Corsie> corsie = new ArrayList<>();
+
+    public List<Corsie> getCorsie() {
+        return corsie;
+    }
+
+    public void setCorsie(List<Corsie> corsie) {
+        this.corsie = corsie;
+    }
 
     public Long getId() {
         return id;

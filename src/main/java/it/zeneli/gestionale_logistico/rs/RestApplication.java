@@ -11,7 +11,7 @@ public class RestApplication extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         Set<Class<?>> classes = new HashSet<>();
-        //classes.add(ChartResource.class);
+        classes.add(MagazzinoResource.class);
         //classes.add(JacksonConfiguration.class);
         //classes.add(HeadersFilter.class);
 
