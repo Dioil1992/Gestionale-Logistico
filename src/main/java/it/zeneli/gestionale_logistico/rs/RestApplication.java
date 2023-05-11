@@ -1,5 +1,7 @@
 package it.zeneli.gestionale_logistico.rs;
 
+import it.zeneli.gestionale_logistico.dao.UtilityDao;
+
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -15,7 +17,7 @@ public class RestApplication extends Application {
         //classes.add(JacksonConfiguration.class);
         //classes.add(HeadersFilter.class);
 
-        //BaseDao.initFactory();
+        UtilityDao.init();
 
         return classes;
     }

@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+@NamedQueries({
+        @NamedQuery(name = "magazzini", query = "SELECT b from it.zeneli.gestionale_logistico.model.Magazzino b " +
+         " order by b.nome desc" )
+})
+
 @Entity(name = "magazzino")
 public class Magazzino {
     @Id

@@ -8,12 +8,17 @@
     <title>Gestionale Logistico</title>
 </head>
 <body>
-        <div>
-        <h1 class="titolo">Gestionale Logistico</h1>
-        <hr>
-        </div>
-        <div>
-        <h3 class="titolo">Benvenuto nel gestionale <em>Li</em></h3>
-        </div>
+<div>
+    <h1 class="titolo">Gestionale Logistico</h1>
+    <hr>
+</div>
+<div>
+    <h3 class="titolo">Benvenuto nel gestionale <em>Li</em></h3>
+</div>
+<nav>
+        <li><a href="">Anagrafiche</a></li>
+        <li><a href="">Magazzino</a></li>
+        <li><a href="">Ordini</a></li>
+</nav>
 </body>
 </html>
